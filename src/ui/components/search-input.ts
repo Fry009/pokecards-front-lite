@@ -45,9 +45,3 @@ export class SearchInput extends LitElement {
   }
   
 }
-declare global {
-  interface HTMLElementTagNameMap {
-    'search-input': SearchInput
-  }
-}
-

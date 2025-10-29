@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
+import '../components/search-input.ts';
 
 
 @customElement('home-page')
@@ -9,13 +10,8 @@ export class HomePage extends LitElement {
   render() {
     return html`
       <h1>This is my home Page</h1>
+      <search-input>  </search-input>
     `;
-  }
-}
-
-declare global {
-  interface HTMLElementTagNameMap {
-    'home-page': HomePage
   }
 }
 
